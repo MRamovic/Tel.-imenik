@@ -1,0 +1,22 @@
+﻿<Window x:Class="Telefonski_imenik_WPF.Editor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Telefonski_imenik_WPF"
+        mc:Ignorable="d"
+        Title="Editor" Height="450" Width="800">
+    <UniformGrid Columns="2" >
+        <Label      Content="Ime"           VerticalAlignment="Center"                                  FontSize=" 42"/>
+        <TextBox    Text="{Binding Ime, UpdateSourceTrigger=Explicit }"         x:Name="txt_Ime"        FontSize=" 42"/>
+        <Label      Content="Prezime"       VerticalAlignment="Center"                                  FontSize=" 42"/>
+        <TextBox    Text="{Binding Prezime, UpdateSourceTrigger=Explicit }"     x:Name="txt_Prezime"    FontSize=" 42"/>
+        <Label      Content="Br.tel."       VerticalAlignment="Center"                                  FontSize=" 42"/>
+        <TextBox    Text="{Binding Broj, UpdateSourceTrigger=Explicit }"        x:Name="txt_Broj"       FontSize=" 42"/>
+        <Label      Content="Adresa"        VerticalAlignment="Center"                                  FontSize=" 42"/>
+        <TextBox    Text="{Binding Adresa, UpdateSourceTrigger=Explicit }"      x:Name="txt_Adresa"     FontSize=" 42"/>
+        <Button     Content="OK"            Click ="Click_Button_OK"            Name ="btn_Ok"          FontSize=" 42"/>
+        <Button     Content="Izlaz"         Click ="Click_Button_Izlaz"         Name ="btn_Izlaz"       FontSize=" 42"/>
+
+    </UniformGrid>
+</Window>
